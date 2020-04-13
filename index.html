@@ -5,7 +5,7 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<div class="container">
 
-		<div class="logo"> WEL<span style="color: #ff1a1a;">COME</span></div>
+		<div class="logo"> ANALATICS<span style="color: #ff1a1a;">INDIA</span></div>
 
 		<div class="toggle"><i class="fa fa-bars"></i></div>
 
@@ -24,7 +24,7 @@
 				
         			<li><a href="#covid19" >Covid19</a></li>
 
-				<li><a href="#portfolio" >Portfolio</a></li>
+				<li><a href="#line_covid19" >Covid19-2</a></li>
 
 				<li><a href="#blogs" >Blogs</a></li>
 
@@ -125,10 +125,13 @@
   
 
 </section>
-<section class="section" id="portfolio">
+<section class="section" id="line_covid19">
 
-	<h2>Our Portfolio</h2>
-	Wait for it...
+	<h2>Line Graph</h2>
+	  <div id="cov_confirm_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+	  <div id="cov_decrease_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+    	  <div id="cov_recovery_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+	<script src="scripts/plotline.js"></script>
 
 </section>
 
@@ -142,7 +145,7 @@
 <section class="section" id="contact">
 
 	<h2>Contact Us</h2>
-	<a href="sajanrajtd.wordpress.com">Click<a>
+	<span style="color: #ff1a1a;"><a href="sajanrajtd.wordpress.com">Click<a></span>
 </section>
 
 <div class="info"></div>
