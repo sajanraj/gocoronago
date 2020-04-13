@@ -1,66 +1,233 @@
-const { useEffect, useState } = React;
+var myheader = document.querySelector('header'),
 
-const Navigation = () => {
-  const [offsetTop, setOffsetTop] = useState(0);
-  let thisElement = React.createRef();
+    toggleMenu = document.getElementsByClassName("fa-bars")[0],
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => setOffsetTop(window.scrollY));
-  }, []);
+    mynav = document.querySelector("nav"),
 
-  useEffect(() => {
-    var tl = new TimelineMax();
+    closeMenu = document.getElementsByClassName("close")[0],
 
-    if (offsetTop === 0) {
-      const style = {
-        backgroundColor: "transparent",
-        borderBottom: "1px solid rgba(255, 255, 255, .1)",
-        boxShadow: "none",
-        color: "#F0F0F2"
-      };
+    mylist = document.getElementsByClassName("list")[0],
 
-      tl.to(thisElement, 0.3, style, "a").to(
-        ".navbar__container",
-        0.3,
-        { padding: "20px 70px", ease: Power1.easeOut },
-        "a"
-      );
-    } else {
-      const style = {
-        backgroundColor: "#F0F0F2",
-        borderBottom: "0",
-        boxShadow: "0px 2px 10px 0px rgba(0,0,0,.3)",
-        color: "#222126"
-      };
+    link1 = document.querySelectorAll(".list li")[0],
 
-      tl.to(thisElement, 0.3, style, "a").to(
-        ".navbar__container",
-        0.3,
-        { padding: "20px 55px" },
-        "a"
-      );
-    }
-  }, [offsetTop]);
+    link2 = document.querySelectorAll(".list li")[1],
 
-  return (
-    <div class="navbar" ref={(el) => (thisElement = el)}>
-      <div class="navbar__container">
-        <div class="navbar__logo">LOGO</div>
-        <ul class="navbar__items">
-          <li class="navbar__link">Home</li>
-          <li class="navbar__link">About</li>
-          <li class="navbar__link">Support</li>
-          <li class="navbar__link">Contact</li>
-        </ul>
-      </div>
-      <div class="navbar__container">
-        <ul class="navbar__items">
-          <li class="navbar__link">My Account</li>
-          <li class="navbar__link">Logout</li>
-        </ul>
-      </div>
-    </div>
-  );
+    link3 = document.querySelectorAll(".list li")[2],
+
+    link4 = document.querySelectorAll(".list li")[3],
+
+    link5 = document.querySelectorAll(".list li")[4],
+
+    link6 = document.querySelectorAll(".list li")[5],  
+
+    sec1 = document.querySelectorAll("section")[0].offsetTop,
+
+    sec2 = document.querySelectorAll("section")[1].offsetTop,
+
+    sec3 = document.querySelectorAll("section")[2].offsetTop,
+
+    sec4 = document.querySelectorAll("section")[3].offsetTop,
+
+    sec5 = document.querySelectorAll("section")[4].offsetTop,
+
+    sec6 = document.querySelectorAll("section")[5].offsetTop,
+
+    links = [link1, link2, link3, link4, link5, link6], 
+
+    sections = [sec1, sec2, sec3, sec4, sec5, sec6];;
+
+toggleMenu.onclick = function() {
+
+	'use strict';
+
+	mynav.classList.toggle("show");
+
 };
 
-ReactDOM.render(<Navigation />, document.getElementById("root"));
+closeMenu.onclick = function() {
+
+	'use strict';
+
+	mynav.classList.remove("show");
+
+};
+
+links[0].addEventListener("click",function() {
+
+	mynav.classList.remove("show");
+
+});
+
+links[1].addEventListener("click",function() {
+
+	mynav.classList.remove("show");
+
+});
+
+links[2].addEventListener("click",function() {
+
+	mynav.classList.remove("show");
+
+});
+
+links[3].addEventListener("click",function() {
+
+	mynav.classList.remove("show");
+
+});
+
+links[4].addEventListener("click",function() {
+
+	mynav.classList.remove("show");
+
+});
+
+links[5].addEventListener("click",function() {
+
+	mynav.classList.remove("show");
+
+});
+
+	 
+
+window.onscroll = function() {
+
+	'use strict';
+
+	
+
+    if (window.scrollY > 300) {myheader.style.opacity= 0;}
+
+    if (window.scrollY > 500) {
+
+        myheader.style.position= "fixed";
+
+        myheader.style.top= 0;
+
+        myheader.style.left= 0;
+
+        myheader.style.right= 0;
+
+    }
+
+    if (window.scrollY > 600) {myheader.style.opacity= 1;}
+
+    else if (window.scrollY < 300) {
+
+        myheader.style.position = "static";
+
+        myheader.style.opacity= 1;
+
+    }
+
+   
+
+    if(window.scrollY < sections[1] - 90) {
+
+	    links[0].classList.add("active");
+
+	    mylist.children[2].classList.remove("active");
+
+	    mylist.children[3].classList.remove("active");
+
+	    mylist.children[4].classList.remove("active");
+
+	    mylist.children[5].classList.remove("active");
+
+	    mylist.children[6].classList.remove("active");
+
+    }
+
+   
+
+    if(window.scrollY > sections[1] - 90) {
+
+		 links[1].classList.add("active");
+
+		 mylist.children[1].classList.remove("active");
+
+		 mylist.children[3].classList.remove("active");
+
+		 mylist.children[4].classList.remove("active");
+
+		 mylist.children[5].classList.remove("active");
+
+		 mylist.children[6].classList.remove("active");
+
+    }
+
+   
+
+    if(window.scrollY > sections[2] - 90) {
+
+		 links[2].classList.add("active");
+
+		 mylist.children[1].classList.remove("active");
+
+		 mylist.children[2].classList.remove("active");
+
+		 mylist.children[4].classList.remove("active");
+
+		 mylist.children[5].classList.remove("active");
+
+		 mylist.children[6].classList.remove("active");
+
+    }
+
+   
+
+    if(window.scrollY > sections[3] - 90) {
+
+		links[3].classList.add("active");
+
+		mylist.children[1].classList.remove("active");
+
+		mylist.children[2].classList.remove("active");
+
+		mylist.children[3].classList.remove("active");
+
+		mylist.children[5].classList.remove("active");
+
+		mylist.children[6].classList.remove("active");
+
+    }
+
+   
+
+    if(window.scrollY > sections[4] - 90) {
+
+	    links[4].classList.add("active");
+
+	    mylist.children[1].classList.remove("active");
+
+	    mylist.children[2].classList.remove("active");
+
+	    mylist.children[3].classList.remove("active");
+
+	    mylist.children[4].classList.remove("active");
+
+	    mylist.children[6].classList.remove("active");
+
+    }
+
+   
+
+    if(window.scrollY > sections[5] - 90) {
+
+	    links[5].classList.add("active");
+
+	    mylist.children[1].classList.remove("active");
+
+	    mylist.children[2].classList.remove("active");
+
+	    mylist.children[3].classList.remove("active");
+
+	    mylist.children[4].classList.remove("active");
+
+	    mylist.children[5].classList.remove("active");
+
+    }
+
+    
+
+};
