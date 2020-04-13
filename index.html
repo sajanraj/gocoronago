@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="scripts/barbel_style.css">
-  <!--react js for babel-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-  <!-- Plotly.js -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>
+<header>
+<link rel="stylesheet" href="scripts/barbel_style.css">
+	<div class="container">
 
-<body>
-<div id="root"></div>
+		<div class="logo"> WEL<span style="color: #ff1a1a;">COME</span></div>
 
-<div class="layer layer--background"></div>
+		<div class="toggle"><i class="fa fa-bars"></i></div>
 
-<div class="layer">
-  <div class="content content--center">
-    <h2 class="content__title">
-     Covid Analytics India 
-    </h2>
-    <p class="content__text">
-      Git Hub Repo <span class="content__text--highlight">engage</span> the Developer.
-    </p>
-    <a href="#" target='_blank'>
-      <button class="content__button">
-        Scroll Down
-      </button>
-    </a>
-   
-  </div>
- <div class='content'></div> 
-</div>
-  <script src="scripts/barbel.js"></script>
- <div>TT :- Total Number of Cases, All other represent Short of State and Union Territories</div>
+		
+
+		<nav>
+
+			<ul class="list">
+
+				<div class="close"><i class="fa fa-times"></i></div>
+
+				<li class="active"><a href="#home">Home</a></li>
+
+				<li><a href="#about" >About</a></li>
+
+				<li><a href="#events" >Events</a></li>
+        <li><a href="#covid19" >Covid19</a></li>
+
+				<li><a href="#portfolio" >Portfolio</a></li>
+
+				<li><a href="#blogs" >Blogs</a></li>
+
+				<li><a href="#contact" >Contact</a></li>
+        
+
+			</ul>
+
+		</nav>
+
+		<div style="clear: both;"></div>
+
+	</div>
+
+</header>
+<script src="scripts/barbel.js"></src>
+
+<section class="section" id="home">
+
+	<div class="container">
+
+		<h1>WELCOME TO MY HUMBLE ABODE</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+	</div>
+
+</section>
+
+<section class="section" id="about">
+
+	<h2>About Us</h2>
+  
+
+</section>
+
+<section class="section" id="events">
+
+	<h2>Events</h2>
+
+</section>
+
+<section class="section" id="covid19">
+
+	<h2>Covid19</h2>
   <div class='content'>
 
     <table align='center'><tr><td>1	AP—Andhra Pradesh</td><td>
@@ -87,12 +122,37 @@
  </table>
 
   </div>
-  
   <div class="content" id="cov_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
   <div class="content" id="cov_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
   <div class="content" id="cov_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
   <script src="scripts/ploting_script.js"></script>
+
+</section>
+<section class="section" id="portfolio">
+
+	<h2>Our Portfolio</h2>
+
+</section>
+
+<section class="section" id="blogs">
+
+	<h2>Blogs</h2>
+
+</section>
+
+<section class="section" id="contact">
+
+	<h2>Contact Us</h2>
+
+</section>
+
+<div class="info"></div>
+
+<footer>All <span style="color: #ff1a1a;">Copyrights</span> Reserved &copy; 2020</footer>
+
+  
+
  
 
-</body>
+
 </html>
