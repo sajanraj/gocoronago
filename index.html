@@ -1,53 +1,93 @@
 <head>
   <!-- Plotly.js -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="scripts/ploting_script.js"></script>
+  <script src="scripts/barbel.js"><script>
+  <link rel="stylesheet" href="scripts/barbel_style.css">
 </head>
 
 <body>
-  <div>TT :- Total Number of Cases, All other represent Short of State and Union Territories</div>
-  <div>
-1	AP—Andhra Pradesh
-2	AR—Arunachal Pradesh
-3	BR—Bihar
-4	CG—Chhattisgarh
-5	CH—Chandigarh
-6	AN-- ANDAMAN AND NICOBAR ISLANDS
-7	DL—Delhi
-8	DN—Dadra and Nagar Haveli
-9	DD—Daman and Diu
-10	GA—Goa
-11	GJ—Gujarat
-12	HP—Himachal Pradesh
-13	HR—Haryana
-14	JH—Jharkhand
-15	JK—Jammu and Kashmir
-16	KA - Karnataka
-17	KL—Kerala
-18	LD—Lakshadweep
-19	LA—Ladakh
-20	MH—Maharashtra
-21	ML—Meghalaya
-22	MN—Manipur
-23	MP—Madhya Pradesh
-24	MZ—Mizoram
-25	NL—Nagaland
-26	OD—Odisha
-27	PB—Punjab
-28	PY—Puducherry
-29	RJ—Rajasthan
-30	SK—Sikkim
-31	TN—Tamil Nadu
-32	TS—Telangana
-33	TR—Tripura
-34	UP—Uttar Pradesh
-35	UK—Uttarakhand
-36	WB—West Bengal
+<div id="root"></div>
+
+<div class="layer layer--background"></div>
+
+<div class="layer">
+  <div class="content content--center">
+    <h2 class="content__title">
+     Covid Analytics India 
+    </h2>
+    <p class="content__text">
+      Git Hub Repo <span class="content__text--highlight">engage</span> the Developer.
+    </p>
+    <a href="#" target='_blank'>
+      <button class="content__button">
+        Scroll Down
+      </button>
+    </a>
+   
+  </div>
+ <div class='content'></div>
+ 
+</div>
+ <div>TT :- Total Number of Cases, All other represent Short of State and Union Territories</div>
+  <div class='content'>
+
+    <table align='center'><tr><td>1	AP—Andhra Pradesh</td><td>
+2	AR—Arunachal Pradesh</td><td>
+3	BR—Bihar</td><td>
+4	CG—Chhattisgarh</td><td>
+5	CH—Chandigarh</td><td>
+6	AN-- ANDAMAN AND NICOBAR ISLANDS</td>
+  </tr><tr>
+  <td>
+7	DL—Delhi</td><td>
+8	DN—Dadra and Nagar Haveli</td><td>
+9	DD—Daman and Diu</td><td>
+10	GA—Goa</td><td>
+11	GJ—Gujarat</td><td>
+12	HP—Himachal Pradesh</td>
+ </tr>
+      <tr>
+     <td>
+  13	HR—Haryana</td><td>
+14	JH—Jharkhand</td><td>
+15	JK—Jammu and Kashmir</td><td>
+16	KA - Karnataka</td><td>
+17	KL—Kerala</td><td>
+18	LD—Lakshadweep</td>
+ </tr><tr>
+     <td>
+  19	LA—Ladakh</td><td>
+20	MH—Maharashtra</td><td>
+21	ML—Meghalaya</td><td>
+22	MN—Manipur</td><td>
+23	MP—Madhya Pradesh</td><td>
+24	MZ—Mizoram</td>
+   </tr><tr>
+      <td>
+25	NL—Nagaland</td><td>
+26	OD—Odisha</td><td>
+27	PB—Punjab</td><td>
+28	PY—Puducherry</td><td>
+29	RJ—Rajasthan</td><td>
+30	SK—Sikkim</td>
+   </tr><tr>
+      <td>
+31	TN—Tamil Nadu</td><td>
+32	TS—Telangana</td><td>
+33	TR—Tripura</td><td>
+34	UP—Uttar Pradesh</td><td>
+35	UK—Uttarakhand</td><td>
+36	WB—West Bengal</td>
+ </tr>
+ </table>
+
+  </div>
   </div>
   <div id="cov_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
   
   <div id="cov_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
   
     <div id="cov_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
-  <script src="scripts/ploting_script.js">
-  </script>
+
 </body>
