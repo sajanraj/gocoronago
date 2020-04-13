@@ -2,7 +2,7 @@
 <html>
 <header>
 <link rel="stylesheet" href="scripts/barbel_style.css">
-
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<div class="container">
 
 		<div class="logo"> ANALATICS<span style="color: #ff1a1a;">INDIA</span></div>
@@ -41,18 +41,15 @@
 
 </header>
 
-
-<body>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="scripts/barbel.js"></script>
-<script src="scripts/ploting_script.js"></script>
-<script src="scripts/plotline.js"></script>
-	
 <section class="section" id="home">
 
 	<div class="container">
 
-  <div class="content" id="cov_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
+		<h1>WELCOME TO MY ANALYTICS SPACE</h1>
+
+		<p>Covid 19 Data Visualization in India</p>
+		<p>Based on the Data Available from External Source.</p>
 
 	</div>
 
@@ -60,21 +57,72 @@
 
 <section class="section" id="about">
 
-  <div class="content" id="cov_decrease" ></div>
+	<h2>About Us</h2>
+  Team Aura for Educational Purpose 
 
 </section>
 
 <section class="section" id="covid19">
 
 	<h2>Covid19</h2>
-  
+  <div class='content'>
+    <div>TT : Reprents total count </div>
 
+    <table align='center'><tr><td>AP—Andhra Pradesh</td><td>
+	AR—Arunachal Pradesh</td><td>
+	BR—Bihar</td><td>
+	CG—Chhattisgarh</td><td>
+	CH—Chandigarh</td><td>
+	AN-- ANDAMAN AND NICOBAR ISLANDS</td>
+  </tr><tr>
+  <td>
+	DL—Delhi</td><td>
+	DN—Dadra and Nagar Haveli</td><td>
+	DD—Daman and Diu</td><td>
+	GA—Goa</td><td>
+	GJ—Gujarat</td><td>
+	HP—Himachal Pradesh</td>
+ </tr>
+      <tr>
+     <td>
+	HR—Haryana</td><td>
+	JH—Jharkhand</td><td>
+	JK—Jammu and Kashmir</td><td>
+	KA - Karnataka</td><td>
+	KL—Kerala</td><td>
+	LD—Lakshadweep</td>
+ </tr><tr>
+     <td>
+	LA—Ladakh</td><td>
+	MH—Maharashtra</td><td>
+	ML—Meghalaya</td><td>
+	MN—Manipur</td><td>
+	MP—Madhya Pradesh</td><td>
+	MZ—Mizoram</td>
+   </tr><tr>
+      <td>
+	NL—Nagaland</td><td>
+	OD—Odisha</td><td>
+	PB—Punjab</td><td>
+	PY—Puducherry</td><td>
+	RJ—Rajasthan</td><td>
+	SK—Sikkim</td>
+   </tr><tr>
+      <td>
+	TN—Tamil Nadu</td><td>
+	TS—Telangana</td><td>
+	TR—Tripura</td><td>
+	UP—Uttar Pradesh</td><td>
+	UK—Uttarakhand</td><td>
+	WB—West Bengal</td>
+ </tr>
+ </table>
 
-  <div class="content" id="cov_recovery" ></div> 
-
-
-
-
+  </div>
+  <div class="content" id="cov_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div class="content" id="cov_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div class="content" id="cov_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script src="scripts/ploting_script.js"></script>
   
 
 </section>
@@ -82,27 +130,27 @@
 
 	<h2>Line Graph</h2>
 	  <div id="cov_confirm_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
-	 
-	
+	  <div id="cov_decrease_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+    	  <div id="cov_recovery_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+	<script src="scripts/plotline.js"></script>
 
 </section>
 
 <section class="section" id="blogs">
 
-<div id="cov_decrease_line" ></div>
+	<h2>Blogs</h2>
+	In development
 
 </section>
 
 <section class="section" id="contact">
 
 	<h2>Contact Us</h2>
-	 <div id="cov_recovery_line" ></div>
 	<span style="color: #ff1a1a;"><a href="sajanrajtd.wordpress.com">Click<a></span>
 </section>
 
 <div class="info"></div>
-</body>
-<footer>All <span style="color: #ff1a1a;">Copyrights</span> Reserved &copy; 2020</footer>
 
+<footer>All <span style="color: #ff1a1a;">Copyrights</span> Reserved &copy; 2020</footer>
 
 </html>
