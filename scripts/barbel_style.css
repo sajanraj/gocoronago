@@ -160,9 +160,9 @@ nav .list {
 
 #home {
 
-	background: -webkit-linear-gradient(to left top, #ffb3b3, #ff9999, #ff8080, #ff6666, #ff4d4d, #ff333);
+	background: -webkit-linear-gradient(to left top, #bfb3b3, #bf9999, #bf8080, #bf6666, #bf4d4d, #bf333);
 
-    background: linear-gradient(to left top, #ffb3b3, #ff9999, #ff8080, #ff6666, #ff4d4d, #ff3333);
+    background: linear-gradient(to left top, #2fb3b3, #bf9999, #bf8080, #5f6666, #3f4d4d, #1f3333);
 
     color: #fff;
 
@@ -206,7 +206,7 @@ div.info {
 
 footer {
 
-    background-color: #1a1a1a;
+    background-color: #1b1a1a;
 
     text-align: center;
 
