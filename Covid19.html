@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<header>
+<link rel="stylesheet" href="scripts/barbel_style.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<div class="container">
+
+		<div class="logo"> ANALATICS<span style="color: #ff1a1a;">INDIA</span></div>
+
+		<div class="toggle"><i class="fa fa-bars"></i></div>
+
+		
+
+		<nav>
+
+			<ul class="list">
+
+				<div class="close"><i class="fa fa-times"></i></div>
+
+				<li class="active"><a href="#home">Home</a></li>
+
+				<li><a href="#about" >About</a></li>
+
+				
+        			<li><a href="#covid19" >Covid19</a></li>
+
+				<li><a href="#line_covid19" >Covid19-2</a></li>
+
+				<li><a href="#blogs" >Blogs</a></li>
+
+				<li><a href="#contact" >Contact</a></li>
+        
+
+			</ul>
+
+		</nav>
+
+		<div style="clear: both;"></div>
+
+	</div>
+
+</header>
+
+<script src="scripts/barbel.js"></script>
+<section class="section" id="home">
+
+	<div class="container">
+
+		<h1>WELCOME TO MY ANALYTICS SPACE</h1>
+
+		<p>Covid 19 Data Visualization in India</p>
+		<p>Based on the Data Available from External Source.</p>
+
+	</div>
+
+</section>
+
+<section class="section" id="about">
+
+	<h2>About Us</h2>
+  Team Aura for Educational Purpose 
+
+</section>
+
+<section class="section" id="covid19">
+
+	<h2>Covid19</h2>
+  
+  <div class="content" id="cov_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div class="content" id="cov_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div class="content" id="cov_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script src="scripts/ploting_script.js"></script>
+  
+
+</section>
+<section class="section" id="line_covid19">
+
+	<h2>Line Graph</h2>
+	  <div id="cov_confirm_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+	  <div id="cov_decrease_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+    	  <div id="cov_recovery_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
+	<script src="scripts/plotline.js"></script>
+
+</section>
+
+<section class="section" id="blogs">
+
+	<h2>Blogs</h2>
+	In development
+
+</section>
+
+<section class="section" id="contact">
+
+	<h2>Contact Us</h2>
+	<span style="color: #ff1a1a;"><a href="sajanrajtd.wordpress.com">Click<a></span>
+</section>
+
+<div class="info"></div>
+
+<footer>All <span style="color: #ff1a1a;">Copyrights</span> Reserved &copy; 2020</footer>
+
+
+</html>
