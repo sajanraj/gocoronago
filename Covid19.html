@@ -130,10 +130,22 @@
  </table>
 
   </div>
-  <div class="container"id="cov_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
-  <div class="container" id="cov_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
-  <div class="container" id="cov_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
-  <script src="scripts/ploting_script.js"></script>
+  <div class="container"id="cov_confirm_graph" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div class="container" id="cov_decrease_graph" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div class="container" id="cov_recovery_graph" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot_cfm%20_test.json", function( data ) {
+  Plotly.plot('cov_confirm_graph',data );
+});
+	  $.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot_decrese.json", function( data ) {
+  Plotly.plot('cov_decrease_graph',data );
+});
+	  	  $.getJSON( " https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot_recvry.json", function( data ) {
+  Plotly.plot('cov_recovery_graph',data );
+});
+	 
+	  
+	</script>
   
 
 </section>
@@ -167,5 +179,6 @@
 <script src="scripts/barbel.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script>
 <script  src="scripts/colorboom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </body>
 </html>
