@@ -10,6 +10,19 @@
 <body>
 <!-- partial:index.partial.html -->
 <header>
+<style>
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<div class="container">
 
@@ -67,6 +80,16 @@
 
 	<h2>About Us</h2>
   Team Aura for Educational Purpose 
+	<div class="row">
+  <div class="column" id="cov_confirm_pie"></div>
+  <div class="column" id=""></div>
+</div>
+	  <script>
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/piechart_confirm.json", function( data ) {
+  Plotly.plot('cov_confirm_pie',data );
+});
+});	  
+</script>
 
 </section>
 
