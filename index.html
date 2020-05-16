@@ -163,20 +163,42 @@
  </table>
 
   </div>
-  <div class="content" id="cov_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div class="content" id="scatterplot_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
   <div class="content" id="cov_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
   <div class="content" id="cov_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
-  <script src="scripts/ploting_script.js"></script>
+	  <script>
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/scatter/scatterplot_confirm.json", function( data ) {
+	Plotly.plot('scatterplot_confirm',data );
+	});	  
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/scatter/scatterplot_decrese.json", function( data ) {
+	Plotly.plot('scatterplot_decrese',data );
+	});
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/scatter/scatterplot_recovery.json", function( data ) {
+	Plotly.plot('scatterplot_recovery',data );
+	});
+	</script>
+ 
   
 
 </section>
 <section class="section" id="line_covid19">
 
 	<h2>Line Graph</h2>
-	  <div id="cov_confirm_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
-	  <div id="cov_decrease_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
-    	  <div id="cov_recovery_line" ><!-- Plotly chart will be drawn inside this DIV --></div>
-	<script src="scripts/plotline.js"></script>
+	  <div id="lineplot_confirm" ><!-- Plotly chart will be drawn inside this DIV --></div>
+	  <div id="lineplot_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
+    	  <div id="lineplot_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
+	<script>
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot/lineplot_confirm.json", function( data ) {
+	Plotly.plot('lineplot_confirm',data );
+	});	  
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot/lineplot_decrease.json", function( data ) {
+	Plotly.plot('lineplot_decrease',data );
+	});
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot/lineplot_recovery.json", function( data ) {
+	Plotly.plot('lineplot_recovery',data );
+	});
+	</script>
+	
 
 </section>
 
