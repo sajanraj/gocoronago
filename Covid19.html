@@ -138,13 +138,13 @@
   <h2>Covid19 Recovery Rate Recorded</h2>
   <div class="container" id="cov_recovery_graph" ><!-- Plotly chart will be drawn inside this DIV --></div>
   <script>
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot_cfm%20_test.json", function( data ) {
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/barplot/barplot_confirm.json", function( data ) {
   Plotly.plot('cov_confirm_graph',data );
 });
-	  $.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot_decrese.json", function( data ) {
+	  $.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/barplot/barplot_decrese.json", function( data ) {
   Plotly.plot('cov_decrease_graph',data );
 });
-	  	  $.getJSON( " https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot_recvry.json", function( data ) {
+	  	  $.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/barplot/barplot_confirm.json", function( data ) {
   Plotly.plot('cov_recovery_graph',data );
 });	  
 </script>
