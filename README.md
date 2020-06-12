@@ -2,6 +2,6 @@
 
 ------------------------------------------------
 
-                                              Used data until 28th April 2020                                       
+                                              Used data until 12th June 2020                                       
 
 <h2 align="center">Website Link:- https://sajanraj.github.io/gocoronago/  <h2>
