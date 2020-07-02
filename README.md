@@ -1,4 +1,4 @@
-<h1 align="center"> Experimental Visualization for Covid 19 Dataset.</h1>
+<h1 align="center"> Visualization for Covid 19 In India.</h1>
 
 ------------------------------------------------
                 
