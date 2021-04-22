@@ -99,7 +99,7 @@
 
 
 	  <script>
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/treemap/treemap_india.json", function( data ) {
+	$.getJSON( "scripts/treemap/treemap_india.json", function( data ) {
 	Plotly.plot('cov_treemap',data, {displaylogo: false});
 	});	  
 	</script>
@@ -118,16 +118,16 @@
   <div class="column" id="cov_Death_pie"></div>
 </div>
 	  <script>
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/piechart/piechart_confirm.json", function( data ) {
+	$.getJSON( "scripts/piechart/piechart_confirm.json", function( data ) {
 	Plotly.plot('cov_confirm_pie',data, {displaylogo: false});
 	});	  
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/piechart/piechart_recovery.json", function( data ) {
+	$.getJSON( "scripts/piechart/piechart_recovery.json", function( data ) {
 	Plotly.plot('cov_recover_pie', data, {displaylogo: false});
 	});
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/piechart/piechart_active.json", function( data ) {
+	$.getJSON( "scripts/piechart/piechart_active.json", function( data ) {
 	Plotly.plot('cov_Active_pie',data );
 	});
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/piechart/piechart_death.json", function( data ) {
+	$.getJSON( "scripts/piechart/piechart_death.json", function( data ) {
 	Plotly.plot('cov_Death_pie',data );
 	});
 	</script>
