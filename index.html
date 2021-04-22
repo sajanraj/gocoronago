@@ -195,13 +195,13 @@
   <div class="content" id="scatterplot_decrese" ><!-- Plotly chart will be drawn inside this DIV --></div>
   <div class="content" id="scatterplot_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
 	  <script>
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/scatter/scatterplot_confirm.json", function( data ) {
+	$.getJSON( "scripts/scatter/scatterplot_confirm.json", function( data ) {
 	Plotly.plot('scatterplot_confirm',data );
 	});	  
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/scatter/scatterplot_decrese.json", function( data ) {
+	$.getJSON( "scripts/scatter/scatterplot_decrese.json", function( data ) {
 	Plotly.plot('scatterplot_decrese',data );
 	});
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/scatter/scatterplot_recovery.json", function( data ) {
+	$.getJSON( "scripts/scatter/scatterplot_recovery.json", function( data ) {
 	Plotly.plot('scatterplot_recovery',data );
 	});
 	</script>
@@ -216,13 +216,13 @@
 	  <div id="lineplot_decrease" ><!-- Plotly chart will be drawn inside this DIV --></div>
     	  <div id="lineplot_recovery" ><!-- Plotly chart will be drawn inside this DIV --></div>
 	<script>
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot/lineplot_confirm.json", function( data ) {
+	$.getJSON( "scripts/lineplot/lineplot_confirm.json", function( data ) {
 	Plotly.plot('lineplot_confirm',data );
 	});	  
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot/lineplot_decrease.json", function( data ) {
+	$.getJSON( "scripts/lineplot/lineplot_decrease.json", function( data ) {
 	Plotly.plot('lineplot_decrease',data );
 	});
-	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/lineplot/lineplot_recovery.json", function( data ) {
+	$.getJSON( "scripts/lineplot/lineplot_recovery.json", function( data ) {
 	Plotly.plot('lineplot_recovery',data );
 	});
 	</script>
