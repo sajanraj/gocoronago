@@ -54,13 +54,14 @@
 				<div class="close"><i class="fa fa-times"></i></div>
 
 				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#treemap" >TreeMap</a></li>
 
-				<li><a href="#about" >About</a></li>
+				<li><a href="#about" >PieChart</a></li>
 
 				
-        			<li><a href="#covid19" >Covid19</a></li>
+        			<li><a href="#covid19" >BubbleChart</a></li>
 
-				<li><a href="#line_covid19" >Covid19-2</a></li>
+				<li><a href="#line_covid19" >LinePlot-2</a></li>
 
 				<li><a href="#blogs" >Next Page</a></li>
 
@@ -91,7 +92,19 @@
 	</div>
 
 </section>
+<section class="section" id="treemap">
 
+<div class="row">
+  <div class="column" id="cov_treemap"></div>
+</div>
+
+	  <script>
+	$.getJSON( "https://raw.githubusercontent.com/sajanraj/gocoronago/master/scripts/treemap/treemap_india.json", function( data ) {
+	Plotly.plot('cov_treemap',data, {displaylogo: false});
+	});	  
+	</script>
+
+</section>
 <section class="section" id="about">
 
 	<h2>About Us</h2>
