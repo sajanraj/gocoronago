@@ -9,5 +9,5 @@
   
   ------------------------------------------------------------------------------------
   
-                (Hosted in aws-ec2-cloud- Supported by AWS Research Credit-End in April 2021)
+                (This project is stopped fro Oct 2021 onwards.)
   --------------------------------------------------------------------------------------
